@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <h2>Sign Up</h2>
+        <div>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {{ form.confirm_password.label }}<br>
+            {{ form.confirm_password(size=32) }}<br>
+            {{ form.submit() }}
+        </div>
+        <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+    </form>
+{% endblock %}

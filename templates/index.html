@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h2>Welcome, {{ current_user.username }}!</h2>
+    <form method="POST" action="{{ url_for('add_task') }}">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.title.label }}<br>
+            {{ form.title(size=32) }}<br>
+            {{ form.description.label }}<br>
+            {{ form.description(cols=32, rows=4) }}<br>
+            {{ form.submit() }}
+        </div>
+    </form>
+    <h3>Your Tasks</h3>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <a href="{{ url_for('complete_task', task_id=task.id) }}">
+                    {% if task.completed %}
+                        <s>{{ task.title }}</s>
+                    {% else %}
+                        {{ task.title }}
+                    {% endif %}
+                </a>
+                <a href="{{ url_for('delete_task', task_id=task.id) }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}
