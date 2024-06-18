@@ -29,7 +29,7 @@ This is a simple To-Do List application built with Flask, MySQL, and a frontend 
 
 1. **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone <https://github.com/yasiruchamuditha/todo.git>
     cd todo_app
     ```
 
@@ -114,7 +114,7 @@ This is a simple To-Do List application built with Flask, MySQL, and a frontend 
 
 1. **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone <https://github.com/yasiruchamuditha/todo.git>
     cd todo_app
     ```
 
