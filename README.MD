@@ -46,7 +46,6 @@ This is a simple To-Do List application built with Flask, MySQL, and a frontend 
         MYSQL_USER = 'your-database-username'
         MYSQL_PASSWORD = 'your-database-password'
         MYSQL_DB = 'your-database'
-        SECRET_KEY = os.urandom(24)  # For session management
     ```
 
 4. **Run the Flask application:**
