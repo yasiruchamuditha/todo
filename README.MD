@@ -49,19 +49,12 @@ This is a simple To-Do List application built with Flask, MySQL, and a frontend 
         SECRET_KEY = os.urandom(24)  # For session management
     ```
 
-4. **Set up the MySQL database:**
-
-    Open your MySQL command line interface and create the required database:
-    ```sql
-    CREATE DATABASE todo_db;
-    ```
-
-5. **Run the Flask application:**
+4. **Run the Flask application:**
     ```bash
     python app.py
     ```
 
-6. **Access the application:**
+5. **Access the application:**
 
     Open your browser and navigate to `http://127.0.0.1:5000`.
 
@@ -72,6 +65,10 @@ This is a simple To-Do List application built with Flask, MySQL, and a frontend 
 3. **Add Task**: Use the form to add a new task.
 4. **Mark Complete**: Click on a task to mark it as complete or incomplete.
 5. **Delete Task**: Click the delete link next to a task to remove it.
+
+## Author
+
+- **Yasiru Chamuditha** - [GitHub Profile](https://github.com/yasiruchamuditha)
 
 ## Contribution
 
